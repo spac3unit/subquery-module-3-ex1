@@ -1,0 +1,9 @@
+type Account @entity {
+  id: ID!
+}
+type Transfer @entity {
+  id: ID!
+  amount: BigInt
+  blockNumber: BigInt
+  to: Account!
+}
